@@ -16,7 +16,7 @@ export function Filters() {
     if (didMount.current) {
       let filteredData = [...data];
 
-      if (season !== season[0]) {
+      if (season !== seasons[0]) {
         filteredData = filteredData.filter((item) => item.season === season);
       }
 
