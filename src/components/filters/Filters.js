@@ -1,9 +1,40 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 import { AppContext } from "../../App";
 
-export function Filters() {
-  const { data } = useContext(AppContext);
+const seasons = ["All Seasons", "Spring", "Summer", "Autumn", "Winter"];
 
-  return <h1>filters</h1>;
+export function Filters() {
+  const [season, setSeason] = useState(seasons[0]);
+  const { data, setFilteredData } = useContext(AppContext);
+
+  const onSeasonChange = ({ target: { value } }) => {
+    if (value === seasons[0]) {
+      setFilteredData(data);
+    } else {
+      const filteredData = [...data].filter((item) => item.season === value);
+
+      setFilteredData(filteredData);
+    }
+
+    setSeason(value);
+  };
+
+  return (
+    <>
+      <h2>Filters:</h2>
+      <form>
+        <label>
+          Season
+          <br />
+          <select value={season} onChange={onSeasonChange}>
+            {seasons.map((s) => (
+              <option value={s}>{s}</option>
+            ))}
+          </select>
+        </label>
+      </form>
+      {season}
+    </>
+  );
 }
