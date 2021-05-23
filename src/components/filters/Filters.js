@@ -34,39 +34,33 @@ export function Filters() {
   }, [season, climate, locale]);
 
   return (
-    <>
-      <h2>Filters:</h2>
-      <form>
-        <label>
-          Season
-          <br />
-          <select value={season} onChange={({ target: { value } }) => setSeason(value)}>
-            {seasons.map((s, idx) => (
-              <option key={idx} value={s}>{s}</option>
-            ))}
-          </select>
-        </label>
+    <form>
+      <label>
+        Season
+        <select value={season} onChange={({ target: { value } }) => setSeason(value)}>
+          {seasons.map((s, idx) => (
+            <option key={idx} value={s}>{s}</option>
+          ))}
+        </select>
+      </label>
 
-        <label>
-          Climate
-          <br />
-          <select value={climate} onChange={({ target: { value } }) => setClimate(value)}>
-            {climates.map((s, idx) => (
-              <option key={idx} value={s}>{s}</option>
-            ))}
-          </select>
-        </label>
+      <label>
+        Climate
+        <select value={climate} onChange={({ target: { value } }) => setClimate(value)}>
+          {climates.map((s, idx) => (
+            <option key={idx} value={s}>{s}</option>
+          ))}
+        </select>
+      </label>
 
-        <label>
-          Locale
-          <br />
-          <select value={locale} onChange={({ target: { value } }) => setLocale(value)}>
-            {locales.map((s, idx) => (
-              <option key={idx} value={s}>{s}</option>
-            ))}
-          </select>
-        </label>
-      </form>
-    </>
+      <label>
+        Locale
+        <select value={locale} onChange={({ target: { value } }) => setLocale(value)}>
+          {locales.map((s, idx) => (
+            <option key={idx} value={s}>{s}</option>
+          ))}
+        </select>
+      </label>
+    </form>
   );
 }
