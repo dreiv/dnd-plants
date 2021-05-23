@@ -1,2 +1,0 @@
-(this["webpackJsonpdnd-plants"]=this["webpackJsonpdnd-plants"]||[]).push([[0],{11:function(n,t,e){"use strict";e.r(t);var c=e(1),s=e.n(c),r=e(3),d=e.n(r),o=(e(8),e(9),e(0));var i=function(){return Object(o.jsx)("div",{className:"App",children:"hello world!"})};d.a.render(Object(o.jsx)(s.a.StrictMode,{children:Object(o.jsx)(i,{})}),document.getElementById("root"))},8:function(n,t,e){},9:function(n,t,e){}},[[11,1,2]]]);
-//# sourceMappingURL=main.b0cb2d38.chunk.js.map
