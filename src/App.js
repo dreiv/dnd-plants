@@ -8,6 +8,8 @@ export const AppContext = createContext();
 function App() {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
+  const [climates, setClimates] = useState(['Loading...']);
+  const [locales, setLocales] = useState(['Loading...']);
 
   useEffect(() => {
     Tabletop.init({
@@ -17,12 +19,25 @@ function App() {
       .then((data) => {
         setData(data);
         setFilteredData(data);
+
+        const climatesTmp = { 'All Climates': true };
+        const localesTmp = { 'All Locales': true };
+
+        data.forEach(item => {
+          climatesTmp[item.climate] = true
+          localesTmp[item.locale] = true
+        })
+
+        setClimates(Object.keys(climatesTmp));
+        setLocales(Object.keys(localesTmp));
       })
       .catch(console.warn);
   }, []);
 
   const defaultContext = {
     data,
+    climates,
+    locales,
     filteredData,
     setFilteredData,
   };

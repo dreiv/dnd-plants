@@ -6,8 +6,8 @@ export function Items() {
   const { filteredData } = useContext(AppContext);
 
   const renderItem = (item) =>
-    Object.entries(item).map(([key, value]) => (
-      <li>
+    Object.entries(item).map(([key, value], idx) => (
+      <li key={idx}>
         {key} - {value}
       </li>
     ));
