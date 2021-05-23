@@ -30,6 +30,7 @@ export function Filters() {
 
       setFilteredData(filteredData);
     } else didMount.current = true;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [season, climate, locale]);
 
   return (
