@@ -1,9 +1,9 @@
-import React, { useContext, Fragment } from "react";
+import React, { Fragment } from "react";
 
-import { AppContext } from "../../App";
+import { useAppState } from "app-context";
 
 export function Items() {
-  const { filteredData } = useContext(AppContext);
+  const { filteredData } = useAppState();
 
   const renderItem = (item) =>
     Object.entries(item).map(([key, value], idx) => (
