@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <details class="filter-details" open>
+      <details className="filter-details" open>
         <summary>Filters</summary>
         <Filters />
       </details>
