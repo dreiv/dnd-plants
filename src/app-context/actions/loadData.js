@@ -1,10 +1,20 @@
+const strToArr = (str) => str.split(", ");
+
 export function loadData(state, data) {
   const climatesTmp = { "All Climates": true };
   const localesTmp = { "All Locales": true };
 
   data.forEach((item) => {
-    climatesTmp[item.climate] = true;
-    localesTmp[item.locale] = true;
+    ["season", "climate", "locale"].forEach((key) => {
+      item[key] = strToArr(item[key]);
+    });
+
+    item.climate.forEach((climate) => {
+      climatesTmp[climate] = true;
+    });
+    item.locale.forEach((climate) => {
+      localesTmp[climate] = true;
+    });
   });
 
   return {

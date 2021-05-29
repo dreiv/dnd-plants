@@ -16,19 +16,25 @@ export function Filters() {
 
   useEffect(() => {
     if (didMount.current) {
-      let filteredData = [...data];
+       let filteredData = [...data];
 
-      if (season !== seasons[0]) {
-        filteredData = filteredData.filter((item) => item.season === season);
-      }
+       if (season !== seasons[0]) {
+         filteredData = filteredData.filter((item) =>
+           item.season.includes(season)
+         );
+       }
 
-      if (climate !== climates[0]) {
-        filteredData = filteredData.filter((item) => item.climate === climate);
-      }
+       if (climate !== climates[0]) {
+         filteredData = filteredData.filter((item) =>
+           item.climate.includes(climate)
+         );
+       }
 
-      if (locale !== locales[0]) {
-        filteredData = filteredData.filter((item) => item.locale === locale);
-      }
+       if (locale !== locales[0]) {
+         filteredData = filteredData.filter((item) =>
+           item.locale.includes(locale)
+         );
+       }
 
       dispatch({ type: appTypes.filterData, filteredData });
     } else didMount.current = true;
