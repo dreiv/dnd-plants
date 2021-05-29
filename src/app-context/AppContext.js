@@ -28,6 +28,7 @@ const appTypes = {
 };
 
 const initialState = {
+  isLoading: true,
   data: [],
   filteredData: [],
   climates: ["All Climates"],

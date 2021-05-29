@@ -9,9 +9,9 @@ export function Items() {
   const renderItem = (item) => (
     <li className="item">
       <h3>{item.name}</h3>
-      <p class="detail-container">Season: {item.season.join(", ")}</p>
-      <p class="detail-container">Climate: {item.climate.join(", ")}</p>
-      <p class="detail-container">Locale: {item.locale.join(", ")}</p>
+      <p className="detail-container">Season: {item.season.join(", ")}</p>
+      <p className="detail-container">Climate: {item.climate.join(", ")}</p>
+      <p className="detail-container">Locale: {item.locale.join(", ")}</p>
     </li>
   );
 

@@ -19,6 +19,7 @@ export function loadData(state, data) {
 
   return {
     ...state,
+    isLoading: false,
     data: data,
     filteredData: data,
     climates: Object.keys(climatesTmp),
