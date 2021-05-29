@@ -1,0 +1,23 @@
+.roll-button {
+  position: absolute;
+  right: 0;
+
+  height: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  font-size: 18px;
+
+  background-color: var(--primary);
+  color: var(--onPrimary);
+
+  border-width: 0;
+  border-radius: var(--border-radius);
+
+  cursor: pointer;
+}
+
+.roll-button:hover,
+.roll-button:focus {
+  opacity: 0.9;
+}
