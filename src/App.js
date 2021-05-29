@@ -1,11 +1,15 @@
 import React from "react";
 
 import { Filters, Items } from "./components";
+import "./App.css";
 
 function App() {
   return (
     <>
-      <Filters />
+      <details class="filter-details" open>
+        <summary>Filters</summary>
+        <Filters />
+      </details>
       <Items />
     </>
   );

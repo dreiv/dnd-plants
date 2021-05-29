@@ -1,0 +1,15 @@
+.filter-details {
+  position: sticky;
+  top: 0;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  background: linear-gradient(var(--background) calc(100% - 1rem), transparent);
+  cursor: pointer;
+}
+
+.filter-details > summary {
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
