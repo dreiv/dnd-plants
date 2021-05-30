@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Filters, Items, Loader, Roll } from "./components";
+import { Filters, Items, Loader } from "components";
 import { useAppState } from "app-context";
 import "./App.css";
 
@@ -17,12 +17,7 @@ function App() {
   }
   return (
     <>
-      <details className="filter-details" open>
-        <summary>
-          Filters <Roll />
-        </summary>
-        <Filters />
-      </details>
+      <Filters />
       <Items />
     </>
   );

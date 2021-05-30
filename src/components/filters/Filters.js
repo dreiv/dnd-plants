@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 
+import { Roll } from "components";
 import { useAppState, appTypes, useAppDispatch } from "app-context";
 import "./Filters.css";
 
@@ -84,6 +85,7 @@ export function Filters() {
           ))}
         </select>
       </label>
+      <Roll />
     </form>
   );
 }
