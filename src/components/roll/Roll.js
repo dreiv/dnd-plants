@@ -13,7 +13,7 @@ export function Roll() {
     const loot = [...filteredData].reduce((acc, item) => {
       const rand = Math.floor(Math.random() * 100 + 1);
 
-      if (rand <= +item.probability) acc.push(item);
+      if (rand <= +item.rarity) acc.push(item);
 
       return acc;
     }, []);

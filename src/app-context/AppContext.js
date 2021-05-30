@@ -31,8 +31,8 @@ const initialState = {
   isLoading: true,
   data: [],
   filteredData: [],
-  climates: ["All Climates"],
-  locales: ["All Locales"],
+  climates: ["All"],
+  locales: ["All"],
 };
 
 function AppProvider({ children }) {

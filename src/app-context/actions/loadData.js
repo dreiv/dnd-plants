@@ -1,8 +1,8 @@
 const strToArr = (str) => str.split(", ");
 
 export function loadData(state, data) {
-  const climatesTmp = { "All Climates": true };
-  const localesTmp = { "All Locales": true };
+  const climatesTmp = { All: true };
+  const localesTmp = { All: true };
 
   data.forEach((item) => {
     ["season", "climate", "locale"].forEach((key) => {

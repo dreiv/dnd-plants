@@ -4,7 +4,7 @@ import { Roll } from "components";
 import { useAppState, appTypes, useAppDispatch } from "app-context";
 import "./Filters.css";
 
-const seasons = ["All Seasons", "Spring", "Summer", "Autumn", "Winter"];
+const seasons = ["Always", "Spring", "Summer", "Autumn", "Winter"];
 
 export function Filters() {
   const dispatch = useAppDispatch();
