@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dnd-plants/static/css/main.2fbfce13.chunk.css",
+    "main.css": "/dnd-plants/static/css/main.33446cfa.chunk.css",
     "main.js": "/dnd-plants/static/js/main.dec77e9b.chunk.js",
     "main.js.map": "/dnd-plants/static/js/main.dec77e9b.chunk.js.map",
     "runtime-main.js": "/dnd-plants/static/js/runtime-main.43f2fdfa.js",
@@ -8,13 +8,13 @@
     "static/js/2.7e7428fb.chunk.js": "/dnd-plants/static/js/2.7e7428fb.chunk.js",
     "static/js/2.7e7428fb.chunk.js.map": "/dnd-plants/static/js/2.7e7428fb.chunk.js.map",
     "index.html": "/dnd-plants/index.html",
-    "static/css/main.2fbfce13.chunk.css.map": "/dnd-plants/static/css/main.2fbfce13.chunk.css.map",
+    "static/css/main.33446cfa.chunk.css.map": "/dnd-plants/static/css/main.33446cfa.chunk.css.map",
     "static/js/2.7e7428fb.chunk.js.LICENSE.txt": "/dnd-plants/static/js/2.7e7428fb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.43f2fdfa.js",
     "static/js/2.7e7428fb.chunk.js",
-    "static/css/main.2fbfce13.chunk.css",
+    "static/css/main.33446cfa.chunk.css",
     "static/js/main.dec77e9b.chunk.js"
   ]
 }
