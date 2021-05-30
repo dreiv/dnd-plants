@@ -53,3 +53,11 @@ button:focus {
   max-width: 70vw;
   max-height: 80vh;
 }
+
+
+@media (max-width:767px) {
+  .roll-dialog {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+}

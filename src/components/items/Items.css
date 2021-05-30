@@ -1,7 +1,7 @@
 .items-container {
   padding: 0;
   display: grid;
-  grid-template-columns:repeat(auto-fit, minmax(19rem , 1fr));
+  grid-template-columns:repeat(auto-fit, minmax(20rem , 1fr));
   gap: 1rem;
   margin-bottom: 4rem;
 }
@@ -13,6 +13,11 @@
   border-radius: var(--border-radius);
 
   padding: 0 1rem;
+}
+
+.item > h3 {
+  overflow-x: hidden;
+  text-overflow: trim;
 }
 
 .item-legendary {
@@ -30,9 +35,11 @@
 .detail-container {
   max-height: 5rem;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .detail-description {
   max-height: 15rem;
   overflow-y: auto;
+  overflow-x: hidden;
 }
