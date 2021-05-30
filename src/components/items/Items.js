@@ -3,8 +3,16 @@ import React, { Fragment } from "react";
 import "./Items.css";
 
 export function Items({ items }) {
+
+  const getRarity = (rarity) => {
+    if (rarity <= 5) return "legendary";
+    if (rarity <= 50) return "rare";
+    if (rarity <= 80) return "uncommon";
+    return "common";
+  };
+
   const renderItem = (item) => (
-    <li className="item">
+    <li className={`item item-${getRarity(item.rarity)}`}>
       <h3>{item.name}</h3>
       <p>Rarity: {item.rarity}%</p>
       <p className="detail-container">Season: {item.season.join(", ")}</p>
