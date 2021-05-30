@@ -49,4 +49,7 @@ button:focus {
 
   border-radius: var(--border-radius);
   border-width: 2px;
+
+  max-width: 70vw;
+  max-height: 80vh;
 }
