@@ -1,8 +1,6 @@
 form {
   margin-top: 2rem;
   max-width: 25rem;
-
-  text-align: end;
 }
 
 label {
@@ -34,5 +32,7 @@ select {
 }
 
 .roll-button {
+  margin-left: auto;
+  display: block;
   width: 15rem;
 }

@@ -43,7 +43,7 @@ export function Filters() {
   }, [season, climate, locale]);
 
   return (
-    <form>
+    <form onSubmit={(e) => e.preventDefault()}>
       <label>
         Season
         <select

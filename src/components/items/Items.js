@@ -1,11 +1,8 @@
 import React, { Fragment } from "react";
 
-import { useAppState } from "app-context";
 import "./Items.css";
 
-export function Items() {
-  const { filteredData } = useAppState();
-
+export function Items({ items }) {
   const renderItem = (item) => (
     <li className="item">
       <h3>{item.name}</h3>
@@ -18,10 +15,8 @@ export function Items() {
 
   return (
     <ul className="items-container">
-      {filteredData.map((item, i) => (
-        <Fragment key={i}>
-          {renderItem(item)}
-        </Fragment>
+      {items.map((item, i) => (
+        <Fragment key={i}>{renderItem(item)}</Fragment>
       ))}
     </ul>
   );

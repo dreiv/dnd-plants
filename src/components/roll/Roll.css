@@ -14,7 +14,39 @@
   cursor: pointer;
 }
 
-.roll-button:hover,
-.roll-button:focus {
+.btn-close {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  font-size: 24px;
+  background-color: transparent;
+
+  border-width: 0;
+  cursor: pointer;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  background-color: var(--surface);
+}
+
+button:hover,
+button:focus {
   opacity: 0.9;
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialog-header h2 {
+  margin: 0;
+}
+
+.roll-dialog {
+  background-color: var(--background);
+
+  border-radius: var(--border-radius);
+  border-width: 2px;
 }

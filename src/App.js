@@ -5,7 +5,7 @@ import { useAppState } from "app-context";
 import "./App.css";
 
 function App() {
-  const { isLoading } = useAppState();
+  const { isLoading, filteredData } = useAppState();
 
   if (isLoading) {
     return (
@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <Filters />
-      <Items />
+      <Items items={filteredData} />
     </>
   );
 }
